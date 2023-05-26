@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>Car Sales</title>
+      <meta charset= "uft-8">
+      <style>
+
+#tbl,tr,td,th{
+      border:1px solid orange;
+     border-collapse: collapse;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</style>
+
+</head>
+   <body>
+     <section id="scnsales">
+
+       <table id="tbl" border=1>
+          <caption>Car Sales-2023</caption>
+            <tr>
+              <th>Make</th>
+              <th>Price</th>
+              <th>Quantity</th>
+              <th>Sales</th>
+           </tr>
+              <tr>
+                <td>Hilux</td>
+                <td>685 000</td>
+                <td>220</td>
+                <td> </td>
+              </tr>
+
+             <tr>
+               <td>Fortuner</td>
+               <td>520 000</td>
+               <td>135</td>
+               <td> </td>
+             </tr>
+
+             <tr>
+            <td>Navara</td>
+            <td>587 000</td>
+            <td>60</td>
+            <td> </td>
+            </tr>
+
+           <tr>
+              <td colspan="3">Total sales </td> <td></td>
+
+</table>
+</section>
+
+</body>
+    <script>
+
+    var rowcount= table.rows.Length;
+    var totalsales=0;
+    var table= document.getElementByld("tbl");
+    var k;
+    for (k=1; k<=table.rows.Length; k++){
+          var price=parseInt(table.rows[k].cells[2].innerHtml);
+          var qty= parseInt(table.rows[k].cells[3].innerHtml);
+          var sale= price*qty;
+          table.rows[k].cells[4].innerHtml=sales;
+          totalsales+=sales;
+
+          table.rows[rowcount].cells[4]innerHtml=totalsales;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ </script>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+   
